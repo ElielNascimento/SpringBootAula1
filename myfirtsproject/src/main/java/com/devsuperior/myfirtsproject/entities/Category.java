@@ -1,15 +1,23 @@
 package com.devsuperior.myfirtsproject.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Category  implements Serializable{
-	 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class Category implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 	private Long id;
 	private String name;
-	
-	public Category () {
-		
+
+	@JsonIgnore
+	private List<Product> products = new ArrayList<>();
+
+	public Category() {
+
 	}
 
 	public Category(Long id, String name) {
@@ -32,6 +40,10 @@ public class Category  implements Serializable{
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<Product> getProducts() {
+		return products;
 	}
 
 	@Override
@@ -58,5 +70,5 @@ public class Category  implements Serializable{
 			return false;
 		return true;
 	}
- 
+
 }

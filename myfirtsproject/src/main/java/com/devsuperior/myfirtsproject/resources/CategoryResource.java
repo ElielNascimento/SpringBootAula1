@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.devsuperior.myfirtsproject.entities.Category;
 import com.devsuperior.myfirtsproject.repositories.CategoryRepository;
 
+
 @RestController
 @RequestMapping(value = "/categories")
 public class CategoryResource {
