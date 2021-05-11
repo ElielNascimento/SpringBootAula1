@@ -1,0 +1,5 @@
+package com.devsuperior.myfirtsproject.repositories;
+
+public class CategoryRepository {
+
+}

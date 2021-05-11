@@ -1,0 +1,9 @@
+package com.devsuperior.myfirtsproject.product;
+
+public class Product {
+	
+	private Long id;
+	private String name;
+	private Double price;
+
+}
